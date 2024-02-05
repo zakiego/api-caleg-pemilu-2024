@@ -17,8 +17,8 @@ API ini menyediakan data calon legislatif (caleg) pada Pemilu 2024. Data yang di
   - Dapil: <https://caleg.zakiego.com/api/dpd/dapil>
   - Calon: <https://caleg.zakiego.com/api/dpd/detail/{dapil_id}>
 - DPR RI
-  - Dapil: <https://caleg.zakiego.com/api/dpr/dapil>
-  - Calon: <https://caleg.zakiego.com/api/dpr/detail/{dapil_id}>
+  - Dapil: <https://caleg.zakiego.com/api/dpr-ri/dapil>
+  - Calon: <https://caleg.zakiego.com/api/dpr-ri/detail/{dapil_id}>
 - DPRD Provinsi
   - Dapil: <https://caleg.zakiego.com/api/dprd-provinsi/dapil>
   - Calon: <https://caleg.zakiego.com/api/dprd-provinsi/detail/{dapil_id}>
