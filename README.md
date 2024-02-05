@@ -14,17 +14,21 @@
 API ini menyediakan data calon legislatif (caleg) pada Pemilu 2024. Data yang disediakan meliputi:
 
 - DPD
-  - Dapil: <https://caleg.zakiego.com/api/dpd/dapil>
-  - Calon: <https://caleg.zakiego.com/api/dpd/detail/{dapil_id}>
+  - List Dapil: <https://caleg.zakiego.com/api/dpd/dapil/list>
+  - List Calon tiap Dapil (many): [https://caleg.zakiego.com/api/dpd/dapil/{dapil_id}](https://caleg.zakiego.com/api/dpd/dapil/11)
+  - Detail Calon (one): [https://caleg.zakiego.com/api/dpd/calon/{caleg_id}](https://caleg.zakiego.com/api/dpd/calon/aceh/6)
 - DPR RI
-  - Dapil: <https://caleg.zakiego.com/api/dpr-ri/dapil>
-  - Calon: <https://caleg.zakiego.com/api/dpr-ri/detail/{dapil_id}>
+  - Dapil: <https://caleg.zakiego.com/api/dpr-ri/dapil/list>
+  - Calon: [https://caleg.zakiego.com/api/dpr-ri/{dapil_id}](https://caleg.zakiego.com/api/dpr-ri/dapil/1101)
+  - Detail Calon: [https://caleg.zakiego.com/api/dpr-ri/calon/{caleg_id}](https://caleg.zakiego.com/api/dpr-ri/calon/aceh-i/partai-kebangkitan-bangsa/6)
 - DPRD Provinsi
-  - Dapil: <https://caleg.zakiego.com/api/dprd-provinsi/dapil>
-  - Calon: <https://caleg.zakiego.com/api/dprd-provinsi/detail/{dapil_id}>
+  - Dapil: <https://caleg.zakiego.com/api/dprd-provinsi/dapil/list>
+  - Calon: [https://caleg.zakiego.com/api/dprd-provinsi/{dapil_id}](https://caleg.zakiego.com/api/dprd-provinsi/dapil/110001)
+  - Detail Calon: [https://caleg.zakiego.com/api/dprd-provinsi/calon/{caleg_id}>](https://caleg.zakiego.com/api/dprd-provinsi/calon/aceh-1/partai-kebangkitan-bangsa/11)
 - DPRD Kabupaten/Kota
-  - Dapil: <https://caleg.zakiego.com/api/dprd-kabupaten-kota/dapil>
-  - Calon: <https://caleg.zakiego.com/api/dprd-kabupaten-kota/detail/{dapil_id}>
+  - Dapil: <https://caleg.zakiego.com/api/dprd-kabupaten-kota/dapil/list>
+  - Calon: [https://caleg.zakiego.com/api/dprd-kabupaten-kota/{dapil_id}](https://caleg.zakiego.com/api/dprd-kabupaten-kota/dapil/110101)
+  - Detail Calon: [https://caleg.zakiego.com/api/dprd-kabupaten-kota/calon/{caleg_id}](https://caleg.zakiego.com/api/dprd-kabupaten-kota/calon/aceh-selatan-1/partai-buruh/1)
 
 ## Type
 
