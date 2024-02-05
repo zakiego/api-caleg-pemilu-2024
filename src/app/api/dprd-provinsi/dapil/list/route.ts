@@ -1,4 +1,4 @@
-import { createApiUrl, responseSuccess } from "@/app/api/utils";
+import { createDapilDetailApiUrl, responseSuccess } from "@/app/api/utils";
 import { dbClient } from "@/db";
 import { NextRequest } from "next/server";
 
@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
   const withUrl = data.map((item) => {
     return {
       ...item,
-      url: createApiUrl("dprd-provinsi", item.id),
+      url: createDapilDetailApiUrl("dprd-provinsi", item.id),
     };
   });
 
