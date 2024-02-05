@@ -23,7 +23,7 @@ Data ini diambil dari web KPU ([infopemilu.kpu.go.id](https://infopemilu.kpu.go.
 
 ### Dapil
 
-Type ini sama untuk semua jenis dapil:
+Type data `dapil` sama untuk semua jenis dapil:
 
 - `dpd`
 - `dpr`
@@ -45,7 +45,7 @@ export interface Dapil {
 
 ### Calon
 
-Ada perbedaan type untuk data calon. Berikut adalah type untuk masing-masing;
+Ada perbedaan type untuk data `calon`. Berikut adalah type untuk masing-masing:
 
 #### DPD
   
