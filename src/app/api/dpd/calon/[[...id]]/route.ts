@@ -4,15 +4,17 @@ import { NextRequest } from "next/server";
 
 type Params = {
   params: {
-    id: string;
+    id: string[];
   };
 };
 
 export const dynamic = "force-dynamic";
 
 export async function GET(request: NextRequest, { params }: Params) {
-  const data = await dbClient.query.dprRiCalon.findMany({
-    where: (table, { eq }) => eq(table.id, params.id),
+  const id = params.id.join("/");
+
+  const data = await dbClient.query.dpdCalon.findMany({
+    where: (table, { eq }) => eq(table.id, id),
   });
 
   if (data.length === 0) {
