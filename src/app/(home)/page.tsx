@@ -1,10 +1,7 @@
-import { dbClient } from "@/db";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
-  const data = await dbClient.query.dpdCalon.findFirst();
-  return (
-    <>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </>
-  );
+  redirect("https://github.com/zakiego/api-caleg-pemilu-2024");
+
+  return <></>;
 }
