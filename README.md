@@ -1,5 +1,14 @@
 # API Caleg Pemilu 2024
 
+## Note
+
+- Data ini diambil dari web KPU ([infopemilu.kpu.go.id](https://infopemilu.kpu.go.id/)) dalam periode 13 Januari 2024 - 22 Januari 2024
+- Jika terjadi perubahan data setelah periode tersebut, maka data yang tersedia di sini mungkin terdapat perbedaan
+- Data ini disediakan untuk keperluan pembelajaran dan penelitian, dan tidak boleh digunakan untuk tujuan komersial
+- Metode yang digunakan adalah web scraping menggunakan `fetch` biasa pada Node.js, setelah itu data yang berbentuk HTML diubah menjadi JSON menggunakan `cheerio`. Saya tidak mejamin 100% akurasi data saat melakukan parsing, namun saya telah berusaha sebaik mungkin untuk memastikan data yang dihasilkan akurat. Untuk penjelasan lebih lanjut mengenai metode dapat dilihat di sini: [Di Balik Layar: Bagaimana Kami Menscrape 250 Ribu Data Caleg Pemilu 2024](https://zakiego.com/articles/pemilu-2024)
+
+- Jika ada pertanyaan atau masukan, silahkan kontak melalui [@zakiego](https://twitter.com/zakiego)
+
 ## Deskripsi
 
 API ini menyediakan data calon legislatif (caleg) pada Pemilu 2024. Data yang disediakan meliputi:
@@ -17,9 +26,11 @@ API ini menyediakan data calon legislatif (caleg) pada Pemilu 2024. Data yang di
   - Dapil: <https://caleg.zakiego.com/api/dprd-kabupaten-kota/dapil>
   - Calon: <https://caleg.zakiego.com/api/dprd-kabupaten-kota/detail/{dapil_id}>
 
-Data ini diambil dari web KPU ([infopemilu.kpu.go.id](https://infopemilu.kpu.go.id/)) dalam periode 13 Januari 2024 - 22 Januari 2024.
+## Type
 
-## Type Object
+Catatan:
+
+Type ini digenerate menggunakan [transform.tools](https://transform.tools/json-to-typescript), jika terdapat kesalahan atau perbaikan, silahkan [buat issue](https://github.com/zakiego/api-caleg-pemilu-2024/issues/new) atau pull request.
 
 ### Dapil
 
