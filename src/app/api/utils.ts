@@ -30,15 +30,28 @@ export const HOST =
     ? "http://localhost:3000"
     : "https://caleg.zakiego.com";
 
-export const createApiUrl = (type: Caleg, id: string) => {
+export const createDapilDetailApiUrl = (type: Caleg, id: string) => {
   switch (type) {
     case "dpd":
-      return `${HOST}/api/dpd/detail/${id}`;
+      return `${HOST}/api/dpd/dapil/${id}`;
     case "dpr-ri":
-      return `${HOST}/api/dpr-ri/detail/${id}`;
+      return `${HOST}/api/dpr-ri/dapil/${id}`;
     case "dprd-provinsi":
-      return `${HOST}/api/dprd-provinsi/detail/${id}`;
+      return `${HOST}/api/dprd-provinsi/dapil/${id}`;
     case "dprd-kabupaten-kota":
-      return `${HOST}/api/dprd-kabupaten-kota/detail/${id}`;
+      return `${HOST}/api/dprd-kabupaten-kota/dapil/${id}`;
+  }
+};
+
+export const createCalonDetailApiUrl = (type: Caleg, id: string) => {
+  switch (type) {
+    case "dpd":
+      return `${HOST}/api/dpd/calon/${id}`;
+    case "dpr-ri":
+      return `${HOST}/api/dpr-ri/calon/${id}`;
+    case "dprd-provinsi":
+      return `${HOST}/api/dprd-provinsi/calon/${id}`;
+    case "dprd-kabupaten-kota":
+      return `${HOST}/api/dprd-kabupaten-kota/calon/${id}`;
   }
 };
