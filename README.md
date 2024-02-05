@@ -28,9 +28,9 @@ API ini menyediakan data calon legislatif (caleg) pada Pemilu 2024. Data yang di
 
 ## Type
 
-Catatan:
-
-Type ini digenerate menggunakan [transform.tools](https://transform.tools/json-to-typescript), jika terdapat kesalahan atau perbaikan, silahkan [buat issue](https://github.com/zakiego/api-caleg-pemilu-2024/issues/new) atau pull request.
+> Catatan:
+> 
+> Type ini digenerate menggunakan [transform.tools](https://transform.tools/json-to-typescript), jika terdapat kesalahan atau perbaikan, silahkan [buat issue](https://github.com/zakiego/api-caleg-pemilu-2024/issues/new) atau pull request.
 
 ### Dapil
 
