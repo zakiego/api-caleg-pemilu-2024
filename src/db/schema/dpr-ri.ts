@@ -24,24 +24,12 @@ export const dprRiCalon = pgTable("dpr_ri_calon", {
     "Bersedia" | "Tidak Bersedia" | "Bersedia Sebagian" | null
   >(),
 
-  status: text("status"),
-  parsedData: integer("parsed_data").default(0),
-
   tempatLahir: text("tempat_lahir"),
-  tanggalLahir: text("tanggal_lahir"),
+
   usia: integer("usia"),
 
   agama: text("agama"),
-  statusPerkawinan: text("status_perkawinan"),
   statusDisabilitas: text("status_disabilitas"),
-
-  alamatLengkap: text("alamat_lengkap"),
-  rt: text("rt"),
-  rw: text("rw"),
-  provinsi: text("provinsi"),
-  kabupatenKota: text("kabupaten_kota"),
-  kecamatan: text("kecamatan"),
-  kelurahan: text("kelurahan"),
 
   pekerjaan: text("pekerjaan"),
 
@@ -94,15 +82,6 @@ export const dprRiCalon = pgTable("dpr_ri_calon", {
       tahun: string | null;
     }[]
   >(),
-
-  riwayatPasangan:
-    json("riwayat_pasangan").$type<
-      {
-        namaPasangan: string | null;
-        statusPasangan: string | null;
-        jumlahAnak: string | null;
-      }[]
-    >(),
 
   programUsulan: json("program_usulan").$type<string[] | null>(),
 
