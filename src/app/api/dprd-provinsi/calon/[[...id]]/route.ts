@@ -4,19 +4,21 @@ import { NextRequest } from "next/server";
 
 type Params = {
   params: {
-    id: string;
+    id: string[];
   };
 };
 
 export const dynamic = "force-dynamic";
 
 export async function GET(request: NextRequest, { params }: Params) {
+  const id = params.id.join("/");
+
   const data = await dbClient.query.dprdProvCalon.findMany({
-    where: (table, { eq }) => eq(table.dapilId, params.id),
+    where: (table, { eq }) => eq(table.id, id),
   });
 
   if (data.length === 0) {
-    return responseError("Dapil tidak ditemukan");
+    return responseError("Calon tidak ditemukan");
   }
 
   return responseSuccess(data);
