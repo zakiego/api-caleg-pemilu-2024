@@ -42,3 +42,16 @@ export const createDapilDetailApiUrl = (type: Caleg, id: string) => {
       return `${HOST}/api/dprd-kabupaten-kota/dapil/${id}`;
   }
 };
+
+export const createCalonDetailApiUrl = (type: Caleg, id: string) => {
+  switch (type) {
+    case "dpd":
+      return `${HOST}/api/dpd/calon/${id}`;
+    case "dpr-ri":
+      return `${HOST}/api/dpr-ri/calon/${id}`;
+    case "dprd-provinsi":
+      return `${HOST}/api/dprd-provinsi/calon/${id}`;
+    case "dprd-kabupaten-kota":
+      return `${HOST}/api/dprd-kabupaten-kota/calon/${id}`;
+  }
+};

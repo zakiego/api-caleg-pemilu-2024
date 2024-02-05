@@ -1,4 +1,8 @@
-import { responseError, responseSuccess } from "@/app/api/utils";
+import {
+  createCalonDetailApiUrl,
+  responseError,
+  responseSuccess,
+} from "@/app/api/utils";
 import { dbClient } from "@/db";
 import { NextRequest } from "next/server";
 
@@ -18,6 +22,10 @@ export async function GET(request: NextRequest, { params }: Params) {
   if (data.length === 0) {
     return responseError("Dapil tidak ditemukan");
   }
+  const withUrl = data.map((calon) => ({
+    url: createCalonDetailApiUrl("dpr-ri", calon.id),
+    ...calon,
+  }));
 
-  return responseSuccess(data);
+  return responseSuccess(withUrl);
 }
