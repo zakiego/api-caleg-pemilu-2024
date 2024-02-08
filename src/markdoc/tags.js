@@ -1,5 +1,5 @@
-import { Callout } from '@/components/Callout'
-import { QuickLink, QuickLinks } from '@/components/QuickLinks'
+import { Callout } from "@/components/Callout";
+import { QuickLink, QuickLinks } from "@/components/QuickLinks";
 
 const tags = {
   callout: {
@@ -7,9 +7,9 @@ const tags = {
       title: { type: String },
       type: {
         type: String,
-        default: 'note',
-        matches: ['note', 'warning'],
-        errorLevel: 'critical',
+        default: "note",
+        matches: ["note", "warning"],
+        errorLevel: "critical",
       },
     },
     render: Callout,
@@ -21,7 +21,7 @@ const tags = {
       alt: { type: String },
       caption: { type: String },
     },
-    render: ({ src, alt = '', caption }) => (
+    render: ({ src, alt = "", caption }) => (
       <figure>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} alt={alt} />
@@ -29,10 +29,10 @@ const tags = {
       </figure>
     ),
   },
-  'quick-links': {
+  "quick-links": {
     render: QuickLinks,
   },
-  'quick-link': {
+  "quick-link": {
     selfClosing: true,
     render: QuickLink,
     attributes: {
@@ -42,6 +42,6 @@ const tags = {
       href: { type: String },
     },
   },
-}
+};
 
-export default tags
+export default tags;
