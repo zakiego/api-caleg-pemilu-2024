@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   metadata: {
     title: {
       template: "%s - Caleg API",
-      default: "Caleg API - API Data Caleg Pemilu 2024",
+      default: "API Data Caleg Pemilu 2024",
     },
     description: "API Data Caleg Pemilu 2024",
   },
