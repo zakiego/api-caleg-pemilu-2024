@@ -8,6 +8,8 @@ title: Type
 
 Type ini digunakan untuk mendeskripsikan struktur data yang diberikan oleh API. Berikut adalah type yang tersedia dalam bahasa TypeScript.
 
+---
+
 ## Dapil
 
 Type data `dapil` sama untuk semua jenis dapil:
@@ -29,6 +31,8 @@ export interface Dapil {
   url: string
 }
 ```
+
+---
 
 ## Calon
 
